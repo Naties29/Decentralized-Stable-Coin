@@ -1,66 +1,16 @@
-## Foundry
+# Decentralized Stable Coin - Cyfrin Updraft Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Hello everyone, this uploaded repo is a decentralized stable coin project. A more challenging project that showcases my improving coding skills with solidity. This project was an excercise completed within the Cyfrin updraft Advanced Foundry section, please check out that amazing free course if you are looking to develop or onboard into web3. 
 
-Foundry consists of:
+My decentralized stable coin uses two main contracts DSC (Decentralized Stable Coin) and DSCE (Decentralized Stable Coin Engine) to operate a platform where users can deposit collateral and mint stablecoin tokens. We assign each user a healthfactor score within our platform, which in turn determines whether a user gets liquidated or is even able to mint our token. Our platforms goal is to stay 200% over collateralized, we offer a 10% price incentive for people to purchase liqudated collateral in order to maintain the platforms solvency. 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+A wide array of tests have been written in order to get a high level of code coverage, reeentrancy measures are implemented throughout the platform. Fuzz testing has also been used in order to increase the scope of security measures for the platform. 
 
-## Documentation
+Author - Nathanael Anderson Junior Security Researcher
 
-https://book.getfoundry.sh/
+# Github - https://github.com/Naties29 
 
-## Usage
+# LinkedIn - https://www.linkedin.com/in/nathanael-anderson-7037042b4/
 
-### Build
+# X - https://x.com/auditor_nate 
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
